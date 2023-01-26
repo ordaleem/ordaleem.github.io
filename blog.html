@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Blog
+title: blog
 ---
-<h1>LaThesetest Posts</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+  {% for post in site.posts limit:3 %}
+      <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<p class="post-meta">
+			<time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ post.date | date: date_format }}
+		</time>
+		</p>
+      {{ post.content }}
+	<hr />
   {% endfor %}
-</ul>
+
+For older posts see <a href="/archive.html">the archive</a>. You can search over there too.

@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -28,8 +26,6 @@ body {
   flex-direction: column;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -40,7 +36,9 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
+h2.posttitle {
+  margin-bottom: $spacing-unit /4;
+  }
 
 /**
  * `main` element
@@ -49,8 +47,6 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-
-
 /**
  * Images
  */
@@ -58,8 +54,10 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
+img.divider {
+  width: 40%;
+  margin: 2em;
+}
 
 /**
  * Figures
@@ -72,13 +70,12 @@ figcaption {
   font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
 ul, ol {
   margin-left: $spacing-unit;
+  list-style-type: none;
 }
 
 li {
@@ -88,16 +85,12 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -107,7 +100,8 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $brand-color;
+    text-decoration: none;
   }
 
   &:hover {
@@ -124,7 +118,6 @@ a {
   }
 }
 
-
 /**
  * Blockquotes
  */
@@ -140,8 +133,6 @@ blockquote {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Code formatting
@@ -169,8 +160,6 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -191,8 +180,6 @@ pre {
   }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -201,8 +188,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
 
 /**
  * Icons
@@ -223,8 +208,6 @@ pre {
   }
 }
 
-
-
 /**
  * Tables
  */
@@ -233,22 +216,59 @@ table {
   width: 100%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
+  border-collapse: separate;
+  border: 0px;
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
   td {
-    border: 1px solid $grey-color-light;
+    border: 0px;
   }
+
+/**
+ * A fancy way to darken a font I guess or soemthing
+  */
+.quiet {
+  font-size: .95em;
+  color: $grey-color;
+  }
+
+/**
+ * Search box nicey
+  */
+form {
+  background-color: #999;
+  width: 300px;
+  height: 34px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #181818;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #181818;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
 }
