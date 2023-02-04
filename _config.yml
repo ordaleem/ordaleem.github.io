@@ -28,7 +28,21 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+  
 show_excerpts: true
+
+collections:
+  posts:
+    output: true
+    permalink: /posts/:year/:month/:title:output_ext
+
+header_pages:
+  - index.html
+  - archive.html
+
+paginate: 12
+# paginate_path: "pages/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,7 +55,3 @@ show_excerpts: true
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# header_pages:
-#   - blog.md
-#   - archive.md

@@ -1,0 +1,41 @@
+---
+layout: post
+title: 'phase 13 lunetta'
+date: 2022-08-01 00:06:40.000000000 -05:00
+tags:
+- modular synth build
+---	
+<p>Just wanted to share my build progress with this bonkers modular lunetta.<br /><br />
+	
+	<div class="middle">
+	<a href="{{ site.baseurl }}/assets/2022/l-face.jpeg"><img src="{{ site.baseurl }}/assets/2022/l-face-th.jpeg" /></a>
+</div></p><p>
+
+If you want to fart around making noisy weird circuits go to the <a target="_blank" href="https://electro-music.com/forum/forum-160.html">Lunetta forums</a> over at electro-music.com and just start reading. It's a gold mine. I've found immense inspiration from everyone posting there, from veterans who've gone on to make careers out of this stuff to noobs asking about voltage regulator pinouts.</p><p>
+
+Given the amount of possibilities the modular approach was the only one that made sense for me. It kept my head from spinning. And since my 3U setup is mostly metal panels, and I have access to wood scraps, I thought I'd give that a go. The patch points are made with bolts. Golds are ins and blacks are outs. I like the grid-like uniform look of the <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Buchla_100_series_at_NYU_%28edit1%29.jpg/1280px-Buchla_100_series_at_NYU_%28edit1%29.jpg">Buchla 100 series</a> and I thought if the panels were more wide than they are tall it would lend itself well to sequencers and the like, make it feel a bit more keyboardy for lack of a better term.</p><p>
+
+<div class="middle">
+<a href="{{ site.baseurl }}/assets/2022/l-angle.jpeg"><img src="{{ site.baseurl }}/assets/2022/l-angle-th.jpeg" /></a>&nbsp;&nbsp;
+<a href="{{ site.baseurl }}/assets/2022/l-back.jpeg"><img src="{{ site.baseurl }}/assets/2022/l-back-th.jpeg" /></a></center>
+</div></p><p>
+
+Anyway, phase #13 includes (clockwise from bottom)</p><p>
+
+- Six 40106 oscillators with a diode CV and a vactrol each.</p><p>
+
+- (Symetrically, from the outside in) two R2R ladders, two 4015 shift registers, and in the center is a 4040 clock divider.</p><p>
+
+- This is a goddamn rotary phone wired up to bolts. No soldering required. It's kind of gimmicky and very ridiculous and fun.</p><p>
+
+- Two LM358 lowpass filters. There are two frequency CVs and one vactrol resonance input each. <a href="/assets/2022/l_filter.jpg">Here's the schematic</a>. I built a few filters and liked the sound of this one the best.</p><p>
+
+- This is a 4051 sequencer with its own internal oscillator and diode CV input. Messing with the ABC inputs is a lot of fun.</p><p>
+
+I don't have a ton to offer at the moment in terms of new circuits or ideas but here are a couple things I've gleaned.</p><p>
+
+C pots or antilog pots work really well with 40106 oscillators. Because it oscillates based on the exponential charging and discharging of a capacitor an antilog pot gives a linear response.</p><p>
+
+Another tiny circuit I like a lot is making a little OR gate on inhibit inputs so you can have a "trigger or gate" response to the same pin. <a href="/assets/2022/l_res_inh.jpg">Like this!</a></p><p>
+
+Anyway, thanks for reading!</p>

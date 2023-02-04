@@ -20,6 +20,7 @@ gem "github-pages", "~> 227", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-paginate"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -40,5 +41,7 @@ gem "kramdown-parser-gfm"
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "kramdown-parser-gfm"
 gem "webrick", "~> 1.7"
+gem "jekyll-import"
+gem "hpricot"
+gem "open_uri_redirections"

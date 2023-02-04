@@ -1,0 +1,40 @@
+---
+layout: post
+title: 'wogglebug'
+date: 2022-09-18
+tags:
+- modular synth build
+---	
+<p><div class="middle">
+<a href="{{ site.baseurl }}/assets/2022/w-faceplate.jpeg"><img src="{{ site.baseurl }}/assets/2022/w-faceplate-th.jpeg" alt="wogglebug faceplate" /></a>
+<a href="{{ site.baseurl }}/assets/2022/w-back.jpeg"><img src="{{ site.baseurl }}/assets/2022/w-back-th.jpeg" alt="wogglebug faceplate" /></a></a></div></p><p>
+
+<p>What is it and how does it work you ask? Jesus I don't know. I know it sounds great though, and has that healthy-but-not-unwieldy amount of instability that I love. There are two oscillators and a third "ring modulated" output from them, two voltage-followy CVs from the oscillators, as well as an internal sample and hold out. You can modulate the clock and it has some great internal cross-modulation. See the Wiard <a href="http://www.wiard.com/modular/300series/wogglebug/index.htm" target="_blank" rel="noopener">Dual Wogglebug</a> for a better explanation.</p><p>
+
+So having gone down this rabbit hole I'm writing this now so that hopefully your jaunt down there isn't so fraught. I bought the PCB from <a href="https://synthcube.com/cart/wiard-wogglebug-motm" target="_blank" rel="noopener">synthcube</a> and started looking at schematics and mods. First there's the Grant Richter <a href="{{ site.baseurl }}/assets/2022/w-standard-3.gif">#3 standard</a> schematic, then there's an update with some improvements (like buffered outputs--this one is what the MOTM PCB corresponds to). Then there's Dave Brown's <a href="https://modularsynthesis.com/bridechamber/wb/DJB%20Wogglebug%20schematics.pdf" target="_blank" rel="noopener">corrected version</a> of that redraw, some minor errors on the PCB, and those are all for +/-15V systems. Does your head hurt yet? Because then there's the Erica Synths <a href="{{ site.baseurl }}/assets/2022/w-erica-redraw.pdf">redraw</a> which does have correct resistor values for +/-12V systems, but also includes some other errors.</p><p>
+
+So here I've redrawn it again! Just to make things more confusing. So this schematic and BOM apply to the MOTM format wiard wogglebug PCB currently sold by synthcube, and has correct resistor values for +/-12V power.</p><p>
+
+Wogglebug <a href="{{ site.baseurl }}/assets/2022/wogglebug_schem_redraw_2022.pdf">Schematic</a><br />
+Corresponding <a href="{{ site.baseurl }}/assets/2022/wogglebug_pcb_bom_redraw_2022.pdf">BOM</a>
+</p><p>
+
+R42 and R43 can serve as attenuators for the smooth and woggle CV output levels respectively. Linking these with wire (zero ohms) yields a signal from about 0-9V.</p><p>
+
+The 3 numbers of the potentiometers correspond to their lug wiring. This isn't always clear on the PCB so you may have to follow some traces. Oh and I couldn't find this anywhere, but the board measures 3 7/8" x 4 5/16" (or 9.9cm x 10.9cm). It was a tight fit!</p><p>
+
+<center>.&emsp;.&emsp;.</center></p><p>
+
+So that's what's up for building a standard wogglebug from the available PCB, and here are some additions and mods not present in the above docs.</p><p>
+
+Pugix made <a href="https://pugix.com/synth/diy-wiard-wogglebug/" target="_blank" rel="noopener">his own wogglebug</a> on protoboard with many interesting differences. I've included the disturb circuit from him, an optional input (or two) that's mixed into the woggle range. I've also added two LED drivers.</p><p>
+
+I've inverted the clock (outlined <a href="https://modularsynthesis.com/bridechamber/wb/wb.htm" target="_blank" rel="noopener">here</a> and <a href="https://electro-music.com/forum/post-294519.html#294519" target="_blank" rel="noopener">here</a>) and interrupted the sample and hold trace on the PCB with a switching jack and diode protection. It's helpful to put a 4.7nf capacitor from V1 lug 3 to ground also.</p><p>
+
+I've seen a couple people asking about making their own dual vactrol (the VTL5C3/2). Yes, it's very doable! Put two LDRs up against one LED and wire the LDRs in series. <a href="{{ site.baseurl }}/assets/2022/w-ldrs.jpeg">Like this!</a></p><p>
+
+So yeah, holy shit. Time to go touch grass. I really am grateful for all the different versions out there because I both pulled and learned from all of them. And to people talking it out on various forums from back when these things were cool (like 2008, ha). Anyway, go build one!</p><p>
+
+<div class="middle">
+<a href="{{ site.baseurl }}/assets/2022/w-patched.jpeg"><img src="{{ site.baseurl }}/assets/2022/w-patched-th.jpeg" alt="wogglebug faceplate" /></a></a>
+</div></p>

@@ -1,51 +1,44 @@
 ---
-layout: home
+layout: default
+title: blog
 ---
-
-
-<!DOCTYPE html>
-<html>
-<body>
-	<!--{% include_relative blog/index.html %}-->
-
-	<div class="page-wrap">
-
-	{{content}}
-
-	</div>
-	This is now index in home rootsss
 {% for post in paginator.posts %}
-<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<p class="author">
-  <span class="date">{{ post.date }}</span>
-</p>
-<div class="content">
-  {{ post.content }}
-</div>
+<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<p class="post-meta">
+		<time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+	{{ post.date | date: date_format }}
+		</time>
+	</p>
+	{% if post.content contains '<!--more-->' %}
+		<div>
+			{{ post.content | split:'<!--more-->' | first }}
+		</div>
+		<input type="checkbox" class="read-more-state" id="{{ page.url }}"/>
+		<div class="read-more">
+			{{ post.content | split:'<!--more-->' | last }}
+		</div>
+		<label for="{{ page.url }}" class="read-more-trigger"></label>
+	{% else %}
+		{{ post.content }}
+	{% endif %}
+<hr />
 {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
+  
   <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    Page {{ paginator.page }} of {{ paginator.total_pages }}
   </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  <br />
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="pagenav">Previous</a>
   {% else %}
-    <span class="next ">Next</span>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="pagenav">Next</a>
+  {% else %}
   {% endif %}
 </div>
-	
-	
-	<footer class="site-footer">
-		{% include footer.html %} 
-	</footer>
-</body>
-</html>

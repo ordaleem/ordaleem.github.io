@@ -4,14 +4,14 @@ title: archive
 ---
 <table class="archivetable">
   <tr>
-    <td><h2>By date</h2></td>
-    <td><h2>By type</h2></td>
+    <td><h2>by date</h2></td>
+    <td><h2>by topic</h2></td>
   </tr>
   <tr>
     <td>
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
-  <h2>{{ year.name }}</h2>
+  <h3 class="archive">{{ year.name }}</h3>
     <ul>
       {% for post in year.items %}
         <li><a href="{{ post.url }}">{{ post.title }}</a><span class="quiet"> - {{ post.date | date: "%b %-d"}}</span></li>
@@ -25,9 +25,9 @@ title: archive
 {% assign vids = tag[1] | sort %}
 
 {% if vids != empty %}
-  <h2 id="{{tag[0] | uri_escape | downcase}}">{{tag[0]}}</h2>
+  <h3 class="archive" id="{{tag[0] | uri_escape | downcase}}">{{tag[0]}}</h3>
      <ul>
-      {% for p in vids %}
+      {% for p in vids reversed %}
 		<li><a href="{{ p.url }}">{{ p.title }}</a><span class="quiet"> - {{ p.date | date: "%b %-d, %Y"}}</span></li>
       {% endfor %}
     </ul>
@@ -36,14 +36,6 @@ title: archive
 	</td>
   </tr>
 </table>
-
-
-<h1>Brian</h1>
-<h2>Cameron{{ year.name }}</h2>
-<h3>Musselwhiteee</h3>
-<h4>White man</h4>
-<h5>Extrordinaitire</h5>
-<h6>Bakes for you</h6>
 
 <form id="form" role="search"> 
   <input type="search" id="query" name="q" placeholder="" aria-label="Search through site content">
