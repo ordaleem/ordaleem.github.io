@@ -229,7 +229,6 @@ pre {
  * Tables
  */
 table {
-  margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
@@ -242,6 +241,11 @@ table {
   td {
     border: 0px;
 	vertical-align: top;
+  }
+.archivetable {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 /**

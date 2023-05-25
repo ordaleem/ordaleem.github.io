@@ -14,7 +14,7 @@ h2.posttitle { margin-bottom: 7.5px; }
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; }
+img { max-width: 100%; vertical-align: middle; height: auto; }
 
 .middle { clear: both; display: block; margin-left: auto; margin-right: auto; text-align: center; }
 
@@ -68,11 +68,13 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .social-media-list li + li { padding-top: 5px; }
 
 /** Tables */
-table { margin-bottom: 30px; width: 100%; text-align: left; color: #e9e9e9; border-collapse: separate; border: 0px; }
+table { width: 100%; text-align: left; color: #e9e9e9; border-collapse: separate; border: 0px; }
 
 th, td { padding: 10px 15px; }
 
 td { border: 0px; vertical-align: top; }
+
+.archivetable { width: auto; margin-left: auto; margin-right: auto; }
 
 /** A fancy way to darken a font I guess or soemthing */
 .quiet { font-size: .95em; color: #515151; }
