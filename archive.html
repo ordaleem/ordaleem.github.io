@@ -4,9 +4,6 @@ title: archive
 ---
 <table class="archivetable">
   <tr>
-    <td><h2>by date</h2></td>
-  </tr>
-  <tr>
     <td>
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
