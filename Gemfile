@@ -41,7 +41,7 @@ gem "kramdown-parser-gfm"
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "webrick", "~> 1.7"
+gem "webrick"
 gem "jekyll-import"
 gem "hpricot"
 gem "open_uri_redirections"
