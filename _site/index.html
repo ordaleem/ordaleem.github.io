@@ -38,6 +38,30 @@
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         
+<h2 class="post-title"><a href="/posts/2024/08/changingmykeyboard.html">changing my keyboard part 1</a></h2>
+	<p class="post-meta">
+		<time class="dt-published" datetime="2024-08-27T00:00:00-04:00" itemprop="datePublished">Aug 27, 2024
+		</time>
+	</p>
+	
+		<p>Ah the world of split ergonomic keyboards. Where one can get lost for days reading barely seen reddit posts and learning all about how programmers type even though you’re not one.</p>
+
+<p>First of all, what’s wrong with a standard keyboard? Nothing! It works, it has all the keys. You can learn how to use it fast and efficiently. It seems most of (?) the people who are into this are motivated by repetitive stress injuries, which also leads to alternative layouts like <a href="https://colemak.com/">Colemak</a>. But I’m motivated purely by interest, I’m just here to have fun (thankfully). But the nerd in me perks up when I read about the questionable utility of the standard keyboard. I’ll stick with qwerty, but there are many functional ways that a standard keyboard is just kind of silly. I only hit the spacebar with my right thumb. I never hit right shift. Or caps lock. Or these things &lt; &gt;. Also they’re <a href="https://josefadamcik.github.io/SofleKeyboard/images/IMG_20200613_150327.jpg">pretty</a>.</p>
+
+<p>A few years ago, I taught myself how to touch type after hunting and pecking for about 20 years. I’m still not good at it but it really got the juices flowing around that neuroplasticity thing I’ve been hearing about. And around things big and small that I take for granted too. And there’s a lot of convergence here with many things that I enjoy. Designing is always fun, designing useful things is even more fun, and designing useful electronics is probably the best thing.</p>
+
+<p>So where to start? I didn’t want to go <a href="https://kbd.news/Smiler18-2426.html">crazy</a>, nor did I want to go <a href="http://xahlee.info/kbd/iergo/Maltron_left_right_keypad__David_Cole_2015-11-07.jpg">crazy</a>, so 58 keys total seemed manageable (a full keyboard with the numpad and stuff is 104 keys). I watched <a href="https://www.youtube.com/watch?v=7UXsD7nSfDY">this video</a> and loved the approach–wireless, a hidden microcontroller and battery, and no need for LEDs.</p>
+
+<p>I quickly stumbled upon some software that a lot of people swear by called <a href="https://github.com/ergogen/ergogen">Ergogen</a>. It was fun to use and helped me get my head around the layout and spacing of the keyboard. But probably the biggest drawback for me is that the end result of using this program is PCB footprints spaced out properly in KiCad. No schematic, no traces drawn. So I used Ergogen to get my layout into kicad then reverse engineered it to get the schematic (not very complicated) then layed out the PCB from there. But hey if Ergogen works for you, go for it! I understand that not everyone wants to learn KiCad either, and I’m sure there’s some functionality to it that I hadn’t tapped.</p>
+
+<p>Anyway there’s plenty of information out there so I’m not going to explain ulnar deviation or layers or home row mod-taps. PCBs and parts are arriving on the regular so I’ll let you know if it was a horrible waste of time or not.</p>
+
+<p><a href="/assets/2024/pcbs1.jpg"><img src="/assets/2024/pcbs1-th.jpg" alt="The PCBs are in" class="middle" /></a>
+<a href="/assets/2024/pcbs2.jpg"><img src="/assets/2024/pcbs2-th.jpg" alt="Stacked PCBs" class="middle" /></a></p>
+
+	
+<hr />
+
 <h2 class="post-title"><a href="/posts/2023/07/upgrade.html">upgrade</a></h2>
 	<p class="post-meta">
 		<time class="dt-published" datetime="2023-07-11T00:00:00-04:00" itemprop="datePublished">Jul 11, 2023
@@ -282,27 +306,6 @@ The schematic I used is on the page linked above.</p><p>
 
 <div class="middle">
 <a href="/assets/2021/u-back.jpeg"><img src="/assets/2021/u-back-th.jpeg" alt="Universal slope back" /></a>
-</div></p>
-	
-<hr />
-
-<h2 class="post-title"><a href="/posts/2021/08/cracklesandpips.html">crackleboxes and pipsqueaks</a></h2>
-	<p class="post-meta">
-		<time class="dt-published" datetime="2021-08-25T00:00:00-04:00" itemprop="datePublished">Aug 25, 2021
-		</time>
-	</p>
-	
-		<p><div class="middle">
-	<a href="/assets/2021/c-group.jpeg"><img src="/assets/2021/c-group-th.jpeg" alt="cracklebox group" /></a></div></p><p>
-These are two circuits that sound great and are relatively simple to build. It's fun to play with layout/container, switches and pots.</p><p>
-
-<a href="https://www.eam.se/kraakdoos/">Here's</a> where I found the original schematic for the cracklebox. Starve pots are highly recommended. I'd also recommend <a href="https://www.youtube.com/watch?v=BzAOPvYRIo8">this album</a> by Michel Waisvisz, inventor of the cracklebox, made only with "cracklesynths".</p><p>
-
-The pipsqueak is from <a href="https://mroztronium.blogspot.com/">Martin Freeman</a> and is a spiritual successor to the cracklebox--a digital noise box made with more readily available components (I bought some knockoff ICs for the crackleboxes). <a href="https://www.modwiggler.com/forum/download/file.php?id=39707">Here</a> is the circuit, and <a href="https://www.modwiggler.com/forum/viewtopic.php?f=17&t=167041&hilit=cracklebox">here</a> is the forum thread I found it on.</p><p>
-
-And here's me playing the circular one:</p><p>
-<div class="middle">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EjJ3ANg1QaM" title="Piss sandwich" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></p>
 	
 <hr />
