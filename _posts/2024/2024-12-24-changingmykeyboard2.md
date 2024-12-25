@@ -16,7 +16,7 @@ I made the keyboard to get familiar with the process and feel--to experiment wit
 
 I eliminated the number row, thinking it would make more ergonomic sense to use layers more efficiently instead. I also staggered the pinky rows quite a bit. On my first iteration I kept mashing other keys while trying to type P or Q (hence the strange key cap profiles as well--which did help a bit). I made it "unibody", shifted and splayed out those thumb keys, and added rotary encoders. (The left one is for left and right arrow keys and the right one is for up and down. Clicking them in toggles ctrl+L/R and PgUp/PgDn.) Another big upgrade was going from Cherry MX brown switches to Kailth silent box browns. (No I don’t understand these bonkers naming conventions either) It feels much better.
 
-[![](/assets/2024/second2-th.jpg)](/assets/2024/second2.jpg)[![](/assets/2024/second3-th.jpg)](/assets/2024/second3.jpg)
+[![](/assets/2024/second2-th.jpg)]{:class="inline"}(/assets/2024/second2.jpg)[![](/assets/2024/second3-th.jpg)]{:class="inline"}(/assets/2024/second3.jpg)
 
 The second design process was a bit insane, basically I made a little drawing and designed it as I went. I hand-wired this one because why not and I wanted to make the body out of wood, mostly because I knew how and big 3D printed things generally look ugly and dumb.
 
@@ -30,6 +30,6 @@ My third iteration is complete and I'm typing on it now. Do you like how it type
 
 One thing I am doing that is pretty much unnecessary and will take a lot of work: I am learning how to type using Colemak-DH. It's fun! I'm using standard keyboards all the time at work so we’ll see how my brain adjusts to being uh… not quite bilingual.
 
-[![](/assets/2024/third2-th.jpg)](/assets/2024/third2.jpg)[![](/assets/2024/third3-th.jpg)](/assets/2024/third3.jpg)
-[![](/assets/2024/third4-th.jpg)](/assets/2024/third4.jpg)[![](/assets/2024/third5-th.jpg)](/assets/2024/third5.jpg)
+[![](/assets/2024/third2-th.jpg)]{:class="inline"}(/assets/2024/third2.jpg)[![](/assets/2024/third3-th.jpg)]{:class="inline"}(/assets/2024/third3.jpg)
+[![](/assets/2024/third4-th.jpg)]{:class="inline"}(/assets/2024/third4.jpg)[![](/assets/2024/third5-th.jpg)]{:class="inline"}(/assets/2024/third5.jpg)
 [![](/assets/2024/pcb-th.jpg){:class="middle"}](/assets/2024/pcb.jpg)

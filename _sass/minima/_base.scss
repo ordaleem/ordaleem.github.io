@@ -64,6 +64,14 @@ img {
   text-align: center;
 }
 
+.inline {
+  clear: both;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 /** when display: block just sucks. Like for two images side by side **/
 .aligncenter {
   margin-left: auto;
