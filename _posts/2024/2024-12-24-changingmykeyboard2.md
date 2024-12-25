@@ -28,8 +28,11 @@ I never really used the rotary encoders much, I usually just used the arrow keys
 
 My third iteration is complete and I'm typing on it now. Do you like how it types? I think I'll keep it for a while. It's nice and low, probably has about the right amount of keys and pinky stagger, and I even threw in a couple extra keys in the middle for fun.
 
-One thing I'm doing that is pretty much unnecessary and will take a lot of work: learning how to type using Colemak-DH. It's fun! I'm using standard keyboards all the time at work so we’ll see how my brain adjusts to being uh… not quite bilingual.
+The most challenging part with this build was the case I'd say. For some reason it was important to me to have the front panel contiguous with the sides so it looks like a shell or something. So I had to both fit the PCB in from the bottom and mount the bottom plate on. The tolerances are pretty tight too, so I learned a lot about autodesk fusion and made a few rough drafts.
+
+Now I'm on to another kind of silly and difficult journey: learning how to type using Colemak-DH. It's fun! I'm using standard keyboards all the time at work so we’ll see how my brain adjusts to being uh… not quite bilingual.
 
 <span class="block">[![](/assets/2024/third2-th.jpg)](/assets/2024/third2.jpg)[![](/assets/2024/third3-th.jpg)](/assets/2024/third3.jpg)</span>
 <span class="block">[![](/assets/2024/third4-th.jpg)](/assets/2024/third4.jpg)[![](/assets/2024/third5-th.jpg)](/assets/2024/third5.jpg)</span>
 [![](/assets/2024/pcb-th.jpg){:class="middle"}](/assets/2024/pcb.jpg)
+[![](/assets/2024/keymodel-th.jpg){:class="middle"}](/assets/2024/keymodel.jpg)
