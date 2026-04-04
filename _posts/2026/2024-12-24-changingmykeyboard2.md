@@ -6,7 +6,7 @@ tags:
 ---
 [![](/assets/2026/tapestwo-th.jpg){:class="middle"}](/assets/2026/tapestwo.jpg)
 
-This tape was recorded over at least 5 years. I don't record much at all but when I do it's usually from my modular synth straight into a 4-track. The part I like most about synths isn't necessarily the music but the process of building or modding. Reading about the circuits and what strangers have gleaned online is more than interesting, and then incorporating that (or "synthesizing" it, haha) into a larger system is really fun and rewarding for me. There's really no end to the lessons learned.
+These tapes were recorded over at least 5 years. I don't record much at all but when I do it's usually from my modular synth straight into a 4-track. The part I like most about synths isn't necessarily the music but the process of building or modding. Reading about the circuits and what strangers have gleaned online is more than interesting, and then incorporating that (or "synthesizing" it, haha) into a larger system is really fun and rewarding for me. There's really no end to the lessons learned.
 
 All that is a solo activity in general (aside from what people share online, but I would hardly call that social) so it's great to meet up with friends irl--of any and all levels of familiarity with electronics--and share what we can. Repairing electronics is another great way to come together. And to make tapes and share those is another.
 
